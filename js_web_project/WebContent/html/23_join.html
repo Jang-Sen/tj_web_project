@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>회원가입 폼</title>
+	<script src="https://t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+	<!-- 다음 우편번호 검색 API 스크립트를 로드합니다. -->
+	<script>
+		function openAddressSearch() {
+			new daum.Postcode({
+				oncomplete: function(data) {
+					var address = data.address; // 사용자가 선택한 주소 정보
+					document.getElementById("address").value = address; // 주소 입력란에 선택한 주소 정보 입력
+				}
+			}).open();
+		}
+	</script>
+	<style>
+		label {
+			display: inline-block;
+			width: 100px;
+			text-align: right;
+			margin-right: 10px;
+		}
+		input[type="text"], input[type="password"], input[type="email"], input[type="tel"], textarea {
+			width: 300px;
+			padding: 5px;
+			margin-bottom: 10px;
+			border-radius: 5px;
+			border: 1px solid #ccc;
+			box-sizing: border-box;
+			font-size: 14px;
+		}
+		input[type="checkbox"], input[type="radio"] {
+			margin-right: 5px;
+		}
+		.btn {
+			display: inline-block;
+			padding: 5px 10px;
+			background-color: #4CAF50;
+			color: white;
+			border-radius: 5px;
+			border: none;
+			cursor: pointer;
+			font-size: 14px;
+		}
+		.btn:hover {
+			background-color: #3e8e41;
+		}
+		textarea {
+			resize: none;
+		}
+	</style>
+</head>
+<body>
+	<form action="submit.php" method="post">
+		<label for="id">아이디</label>
+		<input type="text" id="id" name="id" placeholder="8글자 이상 입력해주세요." required>
+		<button type="button" class="btn" onclick="checkDuplication()">중복확인</button><br><br>
+
+		<label for="password">비밀번호</label>
+		<input type="password" id="password" name="password" required><br><br>
+
+		<label for="password-confirm">비밀번호 확인</label>
+		<input type="password" id="password-confirm" name="password-confirm" required><br><br>
+
+		<label for="name">성명</label>
+		<input type="text" id="name" name="name" required><br><br>
+
+		<label>성별</label>
+		<label for="male">남</label>
+		<input type="radio" id="male" name="gender" value="male" required>
+		<label for="female">여</label>
+		<input type="radio" id="female" name="gender" value="female" required><br><br>
+
+		<label for="email">이메일</label>
+		<input type="email" id="email" name="email" required> @
+		<input type="email" id="email2" name="email2" required>
+		<select>
+			<option value = "default">선택</option>
+			<option value = "naver.com">네이버</option>
+			<option value = "nate.com">네이트</option>
+			<option value = "daum.net">다음</option>
+			<option value = "google.com">구글</option>
+		</select><br><br>
+
+		<label for="address">주소</label>
+		<input type="text" id="address" name="address" required>
+		<button type="button" class="btn">주소찾기</button><br><br>
+
+		<label for="address-details">상세주소</label>
+		<input type="text" id="address-details" name="address-details"><br><br>
+
+		<label for="phone">휴대폰</label>
+		<input type="radio" name="tel" value="skt">SKT
+		<input type="radio" name="tel" value="lg">LG U+
+		<input type="radio" name="tel" value="kt">KT
+		<input type="tel" id="phone" name="phone" required><br><br>
+
+		<label for="hobby">취미</label>
+		<label for="hobby1">영화보기</label>
+		<input type="checkbox" id="hobby1" name="hobby" value="hobby1">
+		<label for="hobby2">등산하기</label>
+		<input type="checkbox" id="hobby2" name="hobby" value="hobby2">
+		<label for="hobby3">게임하기</label>
+		<input type="checkbox" id="hobby3" name="hobby" value="hobby3">
+		<label for="hobby4">잠자기</label>
+		<input type="checkbox" id="hobby4" name="hobby" value="hobby4"><br><br>
+
+		<label for="intro">자기소개</label>
+		<textarea id="intro" name="intro" rows="5" cols="50"></textarea><br><br>
+
+		<input type="submit" value="가입하기">
+		<input type="reset" value="다시입력">
+	</form>
+
+	<script>
+		function checkDuplication() {
+			// 중복 체크 로직을 추가하세요.
+		}
+	</script>
+</body>
+</html>
