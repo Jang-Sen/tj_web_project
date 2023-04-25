@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>CSS - Horizontal</title>
+	<style>
+		ul {
+			list-style-type: none;
+			padding: 0;
+			margin: 0;
+			width: 600px;
+			background: #555;
+			height: 49px;
+			overflow: hidden;
+		}
+		li {
+			/* width: 100px;
+			height: 20px; */
+			float: left;
+			/* display: inline-block; */
+		}
+		ul li a {
+			display: block;
+			text-decoration: none;
+			color: white;
+			padding: 14px 16px;
+			/* float: left; */
+			/* width: 100px;
+			height: 20px; */
+		}
+		ul li:last-child {
+			float: right;
+		}
+		ul li:first-child a {
+			background: mediumseagreen;
+		}
+		ul li a:hover:not(.active) {
+			background: #000;
+			cursor: pointer;
+		}
+	</style>
+</head>
+<body>
+	<h1>Horizontal</h1>
+	<ul>
+		<li><a href="#" class= "active">Home</a></li>
+		<li><a href="#">News</a></li>
+		<li><a href="#">Content</a></li>
+		<li><a href="#">About</a></li>
+	</ul>
+</body>
+</html>
