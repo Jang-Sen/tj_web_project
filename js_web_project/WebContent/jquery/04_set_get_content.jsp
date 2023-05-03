@@ -1,42 +1,42 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="EUC-KR">
+<meta charset="UTF-8">
 <title>Insert title here</title>
 <script src= "http://localhost:9000/js_web_project/jquery/jquery-3.6.4.min.js"></script>
 <script>
 	$(document).ready(function(){
-		// µ¥ÀÌÅÍ ³Ö±â ¹öÆ° Å¬¸¯ ÀÌº¥Æ®
+		// ë°ì´í„° ë„£ê¸° ë²„íŠ¼ í´ë¦­ ì´ë²¤íŠ¸
 		$("#set_data").click(function(){
-			// 1. form ÅÂ±×¿¡ µ¥ÀÌÅÍ ³Ö±â : value --> val()
-			// document.getElementById("name").value = "È«±æµ¿"; --> $("#name").val();
-			$("#name").val("È«±æµ¿");
+			// 1. form íƒœê·¸ì— ë°ì´í„° ë„£ê¸° : value --> val()
+			// document.getElementById("name").value = "í™ê¸¸ë™"; --> $("#name").val();
+			$("#name").val("í™ê¸¸ë™");
 			
 			// 2. innerHTML --> text()
-			$("#addr").text("¼­¿ï½Ã °­³²±¸");
+			$("#addr").text("ì„œìš¸ì‹œ ê°•ë‚¨êµ¬");
 			
-			// 3. text¿¡ html ÅÂ±×¸¦ Ãß°¡ÇÏ´Â °æ¿ì --> html()
-			// $("#hobby").html("<li>°ÔÀÓÇÏ±â</li>");
+			// 3. textì— html íƒœê·¸ë¥¼ ì¶”ê°€í•˜ëŠ” ê²½ìš° --> html()
+			// $("#hobby").html("<li>ê²Œì„í•˜ê¸°</li>");
 			
-			// 4. append(htmlÅÂ±×)
-			$("#hobby").append("<li>°ÔÀÓÇÏ±â</li>").append("<li>³ë·¡ÇÏ±â</li>")
-				.append("<li>µî»êÇÏ±â</li>").append("<li>¿µÈ­º¸±â</li>");
+			// 4. append(htmlíƒœê·¸)
+			$("#hobby").append("<li>ê²Œì„í•˜ê¸°</li>").append("<li>ë…¸ë˜í•˜ê¸°</li>")
+				.append("<li>ë“±ì‚°í•˜ê¸°</li>").append("<li>ì˜í™”ë³´ê¸°</li>");
 			
-			// 5. aÅÂ±× ¸µÅ© ÇüÅÂ·Î d1¿¡ Ãß°¡ÇÏ±â
+			// 5. aíƒœê·¸ ë§í¬ í˜•íƒœë¡œ d1ì— ì¶”ê°€í•˜ê¸°
 			$("#d1").html("<a href= 'http://www.naver.com'>Naver</a>");
 			
 			$("#d2").html("<img src= '../images/cmong.jpg'>");
 			$("#d2 > img").css("width", "10%");
 		});
 		
-		// µ¥ÀÌÅÍ °¡Á®¿À±â ¹öÆ°
+		// ë°ì´í„° ê°€ì ¸ì˜¤ê¸° ë²„íŠ¼
 		$("#get_data").click(function(){
-			// id°¡ nameÀÎ Æû¿¡¼­ µ¥ÀÌÅÍ¸¦ °¡Á®¿Í¼­ --> id°¡ getNameÀÎ Æû¿¡ ³Ö±â
+			// idê°€ nameì¸ í¼ì—ì„œ ë°ì´í„°ë¥¼ ê°€ì ¸ì™€ì„œ --> idê°€ getNameì¸ í¼ì— ë„£ê¸°
 			$("#getName").val($("#name").val());
 			
-			// ³×ÀÌ¹öÀÇ href ¼Ó¼ºÀ» s1¿¡ ³Ö±â
+			// ë„¤ì´ë²„ì˜ href ì†ì„±ì„ s1ì— ë„£ê¸°
 			$("#s1").text($("#d1 a").attr("href"));
 			
 			$("#s2").text($("#d2 > img").attr("src"));
@@ -46,16 +46,16 @@
 </head>
 <body>
 	<h1>Set/Get Content</h1>
-	ÀÌ¸§ : <input type= "text" name= "name" id= "name"><br>
-	ÁÖ¼Ò : <p id= "addr"></p>
-	Ãë¹Ì : <ul id= "hobby"></ul>
-	³×ÀÌ¹ö ÁÖ¼Ò : <div id= "d1"></div>
-	ÀÌ¹ÌÁö ÁÖ¼Ò : <div id= "d2"></div>
-	<button type= "button" id= "set_data">µ¥ÀÌÅÍ ³Ö±â</button>
+	ì´ë¦„ : <input type= "text" name= "name" id= "name"><br>
+	ì£¼ì†Œ : <p id= "addr"></p>
+	ì·¨ë¯¸ : <ul id= "hobby"></ul>
+	ë„¤ì´ë²„ ì£¼ì†Œ : <div id= "d1"></div>
+	ì´ë¯¸ì§€ ì£¼ì†Œ : <div id= "d2"></div>
+	<button type= "button" id= "set_data">ë°ì´í„° ë„£ê¸°</button>
 	<hr>
 	Get Name : <input type= "text" id= "getName">
-	³×ÀÌ¹ö ÁÖ¼Ò °¡Á®¿À±â(href ¼Ó¼º) : <span id= "s1"></span><br>
-	ÀÌ¹ÌÁö ÁÖ¼Ò °¡Á®¿À±â(src ¼Ó¼º) : <span id= "s2"></span><br>
-	<button type= "button" id= "get_data">µ¥ÀÌÅÍ °¡Á®¿À±â</button>
+	ë„¤ì´ë²„ ì£¼ì†Œ ê°€ì ¸ì˜¤ê¸°(href ì†ì„±) : <span id= "s1"></span><br>
+	ì´ë¯¸ì§€ ì£¼ì†Œ ê°€ì ¸ì˜¤ê¸°(src ì†ì„±) : <span id= "s2"></span><br>
+	<button type= "button" id= "get_data">ë°ì´í„° ê°€ì ¸ì˜¤ê¸°</button>
 </body>
 </html>

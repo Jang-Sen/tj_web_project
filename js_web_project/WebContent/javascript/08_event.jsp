@@ -1,9 +1,9 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="EUC-KR">
+<meta charset="UTF-8">
 <title>JS - Event</title>
 <script>
 	function validationCheck(){
@@ -11,10 +11,10 @@
 		let pass = document.getElementById("pass");
 		
 		if(id.value == ""){
-			alert("¾ÆÀÌµğ¸¦ ÀÔ·ÂÇØÁÖ¼¼¿ä.");
+			alert("ì•„ì´ë””ë¥¼ ì…ë ¥í•´ì£¼ì„¸ìš”.");
 			id.focus();
 		} else if(pass.value == ""){
-			alert("ÆĞ½º¿öµå¸¦ ÀÔ·ÂÇØÁÖ¼¼¿ä.");
+			alert("íŒ¨ìŠ¤ì›Œë“œë¥¼ ì…ë ¥í•´ì£¼ì„¸ìš”.");
 			pass.focus();
 		}
 	}
@@ -24,16 +24,16 @@
 	<h1>Login Form</h1>
 	<ul>
 		<li>
-			<label>¾ÆÀÌµğ</label>
+			<label>ì•„ì´ë””</label>
 			<input type= "text" name= "id" id= "id">
 		</li>
 		<li>
-			<label>ÆĞ½º¿öµå</label>
+			<label>íŒ¨ìŠ¤ì›Œë“œ</label>
 			<input type= "password" name= "pass" id= "pass">
 		</li>
 		<li>
-			<button type= "button" onclick= "validationCheck()">·Î±×ÀÎ</button>
-			<button type= "reset">´Ù½Ã¾²±â</button>
+			<button type= "button" onclick= "validationCheck()">ë¡œê·¸ì¸</button>
+			<button type= "reset">ë‹¤ì‹œì“°ê¸°</button>
 		</li>
 	</ul>
 </body>

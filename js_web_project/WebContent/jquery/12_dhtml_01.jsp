@@ -6,13 +6,12 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 <script src= "http://localhost:9000/js_web_project/jquery/jquery-3.6.4.min.js"></script>
-<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script> -->
 <script>
-	/* 
-		형식 : $(선택자).메소드();
-	*/
-	$(document).ready(function(){		/* window.onload 함수와 동일한 기능 수행 */
-		alert("hello jquery");
+	$(document).ready(function(){
+		let code = "<h1>DHTML(Dynamic HTML)</h1>";
+		let code2 = "<h2>code test</h2>";
+		$("body").append(code);
+		$("body").append(code2);
 	});
 </script>
 </head>

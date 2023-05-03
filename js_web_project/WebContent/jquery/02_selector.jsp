@@ -1,14 +1,14 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="EUC-KR">
+<meta charset="UTF-8">
 <title>Insert title here</title>
 <script src= "http://localhost:9000/js_web_project/jquery/jquery-3.6.4.min.js"></script>
 <script>
 	$(document).ready(function(){
-		/* $(¼±ÅÃÀÚ).css("½ºÅ¸ÀÏÇÁ·ÎÆÛÆ¼", "°ª"); */
+		/* $(ì„ íƒì).css("ìŠ¤íƒ€ì¼í”„ë¡œí¼í‹°", "ê°’"); */
 		$("h1").css("color", "tomato").css("border", "1px solid red");
 		$("ul > li:last-child").css("background", "blue").css("color", "white");
 		$(".p1").css("color", "red");
@@ -19,7 +19,7 @@
 </head>
 <body>
 	<h1>Selectors</h1>
-	<p class= "p1">Class ¼±ÅÃÀÚ</p>
+	<p class= "p1">Class ì„ íƒì</p>
 	<ul>
 		<li>Java</li>
 		<li>Oracle</li>
@@ -28,7 +28,7 @@
 		<li>JavaScript</li>
 		<li>jQuery</li>
 	</ul>
-	<p id= "p2">id ¼±ÅÃÀÚ</p>
+	<p id= "p2">id ì„ íƒì</p>
 	<a href= "http://www.naver.com">Naver</a>
 	<a href= "http://www.google.com" target= "_block">Google</a>
 	<a href= "http://www.daum.net">Daum</a>

@@ -4,15 +4,9 @@
 <html>
 <head>
 <meta charset="UTF-8">
-	<title>Insert title here</title>
-	<script>
-		window.alert("Hello~ (Head) JavaScript");
-	</script>
+<title>Insert title here</title>
 </head>
 <body>
-	<script>
-		window.alert("Hello~ (Body) JavaScript");
-	</script>
 
 </body>
 </html>

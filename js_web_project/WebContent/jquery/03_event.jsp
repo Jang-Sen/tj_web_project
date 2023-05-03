@@ -1,24 +1,24 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="EUC-KR">
+<meta charset="UTF-8">
 <title>Insert title here</title>
 <script src= "http://localhost:9000/js_web_project/jquery/jquery-3.6.4.min.js"></script>
 <script>
 	$(document).ready(function(){
 		/*
-			$(¼±ÅÃÀÚ).ÀÌº¥Æ®ÇÚµé·¯¸Ş¼Òµå();
-			$(¼±ÅÃÀÚ).on("ÀÌº¥Æ®ÇÚµé·¯¸Ş¼Òµå", ÇÔ¼öÁ¤ÀÇ);
-			$(¼±ÅÃÀÚ).on
+			$(ì„ íƒì).ì´ë²¤íŠ¸í•¸ë“¤ëŸ¬ë©”ì†Œë“œ();
+			$(ì„ íƒì).on("ì´ë²¤íŠ¸í•¸ë“¤ëŸ¬ë©”ì†Œë“œ", í•¨ìˆ˜ì •ì˜);
+			$(ì„ íƒì).on
 		*/
 		$("#btn1").click(function(){
-			alert("Button1 Å¬¸¯");
+			alert("Button1 í´ë¦­");
 		});
 		
 		$("#btn2").on("click", function(){
-			alert("Button2 Å¬¸¯");
+			alert("Button2 í´ë¦­");
 		});
 		
 		$("#btn3").on({

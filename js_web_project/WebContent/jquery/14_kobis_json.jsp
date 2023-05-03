@@ -4,15 +4,11 @@
 <html>
 <head>
 <meta charset="UTF-8">
-	<title>Insert title here</title>
-	<script>
-		window.alert("Hello~ (Head) JavaScript");
-	</script>
+<title>Insert title here</title>
+<script src= "http://localhost:9000/js_web_project/jquery/jquery-3.6.4.min.js"></script>
+<script src= "kobis_json.js"></script>
 </head>
 <body>
-	<script>
-		window.alert("Hello~ (Body) JavaScript");
-	</script>
 
 </body>
 </html>

@@ -1,9 +1,9 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="EUC-KR">
+<meta charset="UTF-8">
 <title>JS - DOM</title>
 <style>
 	div#menu {
@@ -65,11 +65,11 @@
 	<div id= "menu">
 		<div class= "top_menu" onclick= "show()">
 			<ul>
-				<li><a href= "#" class= "m">·Î±×ÀÎ</a></li>
-				<li><a href= "#" class= "m">È¸¿ø°¡ÀÔ</a></li>
-				<li><a href= "#" class= "m">°í°´¼¾ÅÍ</a></li>
-				<li><a href= "#" class= "m">°øÁö»çÇ×</a></li>
-				<li><a href= "#" class= "m">°Ô½ÃÆÇ</a></li>
+				<li><a href= "#" class= "m">ë¡œê·¸ì¸</a></li>
+				<li><a href= "#" class= "m">íšŒì›ê°€ìž…</a></li>
+				<li><a href= "#" class= "m">ê³ ê°ì„¼í„°</a></li>
+				<li><a href= "#" class= "m">ê³µì§€ì‚¬í•­</a></li>
+				<li><a href= "#" class= "m">ê²Œì‹œíŒ</a></li>
 			</ul>
 		</div>
 		<div class= "sub_menu" id= "hide"></div>

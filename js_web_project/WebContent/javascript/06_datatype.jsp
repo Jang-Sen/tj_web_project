@@ -1,15 +1,15 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="EUC-KR">
+<meta charset="UTF-8">
 <title>JS - Datatype</title>
 <script>
-	/* º¯¼ö Á¤ÀÇ ½Ã º°µµÀÇ µ¥ÀÌÅÍ Å¸ÀÔ ¼±¾ğÀº ÇÊ¿äÇÏÁö ¾ÊÀ½, º¯¼ö¿¡ ÀúÀåµÇ´Â °ª¿¡ µû¶ó µ¥ÀÌÅÍ Å¸ÀÔ °áÁ¤ */
+	/* ë³€ìˆ˜ ì •ì˜ ì‹œ ë³„ë„ì˜ ë°ì´í„° íƒ€ì… ì„ ì–¸ì€ í•„ìš”í•˜ì§€ ì•ŠìŒ, ë³€ìˆ˜ì— ì €ì¥ë˜ëŠ” ê°’ì— ë”°ë¼ ë°ì´í„° íƒ€ì… ê²°ì • */
 	let number = 100;
 	let numberd = 10.345;
-	let name = "'È«±æµ¿'";
+	let name = "'í™ê¸¸ë™'";
 	let name2 = 'hong';
 	const narray = [10, 20, 30];
 	const darray = [10.1, 10.2];

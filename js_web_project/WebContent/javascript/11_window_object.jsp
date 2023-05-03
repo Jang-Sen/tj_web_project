@@ -1,25 +1,25 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="EUC-KR">
-<title>JS - window °´Ã¼</title>
+<meta charset="UTF-8">
+<title>JS - window ê°ì²´</title>
 <script>
-	/* 1. window.alert(¸Ş¼¼Áö) */
+	/* 1. window.alert(ë©”ì„¸ì§€) */
 	/* alert('window.alert test'); */
 	
-	/* 2. window.confirm(¸Ş¼¼Áö) */
-	/* let result = window.confirm('°è¼Ó ÁøÇàÇÏ½Ã°Ú½À´Ï±î?');
+	/* 2. window.confirm(ë©”ì„¸ì§€) */
+	/* let result = window.confirm('ê³„ì† ì§„í–‰í•˜ì‹œê² ìŠµë‹ˆê¹Œ?');
 	if (result){
-		document.write('ÁøÇà');
+		document.write('ì§„í–‰');
 	} else{
-		document.write('Á¾·á');
+		document.write('ì¢…ë£Œ');
 	} */
 	
-	/* 3. window.prompt(¸Ş¼¼Áö) - µ¥ÀÌÅÍ ÀÔ·Â ¹Ş¾Æ Ã³¸® */
-	let name = window.prompt('ÀÌ¸§À» ÀÔ·ÂÇØÁÖ¼¼¿ä.(¿¹ : È«±æµ¿)');
-	document.write('<h1>ÀÌ¸§ : ' + name + '</h1>')
+	/* 3. window.prompt(ë©”ì„¸ì§€) - ë°ì´í„° ì…ë ¥ ë°›ì•„ ì²˜ë¦¬ */
+	let name = window.prompt('ì´ë¦„ì„ ì…ë ¥í•´ì£¼ì„¸ìš”.(ì˜ˆ : í™ê¸¸ë™)');
+	document.write('<h1>ì´ë¦„ : ' + name + '</h1>')
 </script>
 </head>
 <body>

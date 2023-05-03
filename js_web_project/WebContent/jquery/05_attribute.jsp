@@ -1,9 +1,9 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="EUC-KR">
+<meta charset="UTF-8">
 <title>Insert title here</title>
 <style>
 	span {
@@ -27,20 +27,20 @@
 			}
 		});
 		/* $("span#cgv").click(function(){
-			// alert("ÀÌ¹ÌÁö È£Ãâ");
+			// alert("ì´ë¯¸ì§€ í˜¸ì¶œ");
 			$("img").attr("src", "../images/h1_cgv.png");
 		});
 		$("span#event").click(function(){
-			// alert("ÀÌ¹ÌÁö È£Ãâ");
+			// alert("ì´ë¯¸ì§€ í˜¸ì¶œ");
 			$("img").attr("src", "../images/h3_event.gif");
 		}); */
 	});
 </script>
 </head>
 <body>
-	<span id= "google">±¸±Û</span>
+	<span id= "google">êµ¬ê¸€</span>
 	<span id= "cgv">CGV</span>
-	<span id= "event">ÀÌº¥Æ®</span>
+	<span id= "event">ì´ë²¤íŠ¸</span>
 	<hr>
 	<img src= "../images/logo.png">
 </body>

@@ -1,16 +1,16 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="EUC-KR">
+<meta charset="UTF-8">
 <title>JS - Operators</title>
 <script>
-	/* »ê¼ú¿¬»êÀÚ */
+	/* ì‚°ìˆ ì—°ì‚°ì */
 	let num1 = 100;
 	let num2 = 50;
 	
-	document.write("<h5>»ê¼ú¿¬»êÀÚ</h5>");
+	document.write("<h5>ì‚°ìˆ ì—°ì‚°ì</h5>");
 	document.write("num1 + num2 = " + (num1 + num2) + '<br>');
 	document.write("num1 - num2 = " + (num1 - num2) + '<br>');
 	document.write("num1 * num2 = " + (num1 * num2) + '<br>');
@@ -18,8 +18,8 @@
 	document.write("num1 % num2 = " + (num1 % num2) + '<br><br>');
 	document.write("<hr>");
 	
-	/* ºñ±³¿¬»êÀÚ */
-	document.write("<h5>ºñ±³¿¬»êÀÚ</h5>");
+	/* ë¹„êµì—°ì‚°ì */
+	document.write("<h5>ë¹„êµì—°ì‚°ì</h5>");
 	document.write("num1 == num2 = " + (num1 == num2) + '<br>');
 	/* document.write("num1 === num2 = " + (num1 === num2) + '<br>'); */
 	document.write("num1 != num2 = " + (num1 != num2) + '<br>');
@@ -27,8 +27,8 @@
 	document.write("num1 <= num2 = " + (num1 <= num2) + '<br>');
 	document.write("<hr>");
 	
-	/* ³í¸®¿¬»êÀÚ */
-	document.write("<h5>³í¸®¿¬»êÀÚ</h5>");
+	/* ë…¼ë¦¬ì—°ì‚°ì */
+	document.write("<h5>ë…¼ë¦¬ì—°ì‚°ì</h5>");
 	document.write("(10 > 9) && (10 > 5) = " + ((10 > 9) && (10 > 5)) + '<br>');
 	document.write("(10 > 9) && (10 < 5) = " + ((10 > 9) && (10 < 5)) + '<br>');
 	document.write("(10 < 9) && (10 > 5) = " + ((10 < 9) && (10 > 5)) + '<br>');
@@ -39,17 +39,17 @@
 	document.write("(10 < 9) || (10 < 5) = " + ((10 < 9) || (10 < 5)) + '<br>');
 	document.write("<hr>");
 	
-	/* Áõ°¨¿¬»êÀÚ */
+	/* ì¦ê°ì—°ì‚°ì */
 	var i = 10;
-	document.write("<h5>Áõ°¨¿¬»êÀÚ</h5>");
+	document.write("<h5>ì¦ê°ì—°ì‚°ì</h5>");
 	document.write("i++ = " + (i++) + '<br>');	// out : 10, in : 11
 	document.write("++i = " + (++i) + '<br>');	// out : 12, in : 12
 	document.write("--i = " + (--i) + '<br>');	// out : 11, in : 11
 	document.write("<hr>");
 	
-	/* ÁßÃ¸¿¬»êÀÚ */
+	/* ì¤‘ì²©ì—°ì‚°ì */
 	var sum = 100;
-	document.write("<h5>ÁßÃ¸(´©Àû)¿¬»êÀÚ</h5>");
+	document.write("<h5>ì¤‘ì²©(ëˆ„ì )ì—°ì‚°ì</h5>");
 	document.write("sum = sum = 100 = " + (sum = sum + 100) + '<br>');
 	document.write("sum += 100 --> " + (sum += 100) + '<br>');
 	document.write("<hr>");

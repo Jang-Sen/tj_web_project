@@ -1,18 +1,18 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="EUC-KR">
+<meta charset="UTF-8">
 <title>Insert title here</title>
 <script>
-	/* body ·ÎµùµÈ ÈÄ test() ÇÔ¼ö È£Ãâ */
+	/* body ë¡œë”©ëœ í›„ test() í•¨ìˆ˜ í˜¸ì¶œ */
 	function test(){
-		document.write("<h3>test ÇÔ¼ö È£Ãâ</h3>");
+		document.write("<h3>test í•¨ìˆ˜ í˜¸ì¶œ</h3>");
 	}
 	
 	const person = {
-			name : "È«±æµ¿",
+			name : "í™ê¸¸ë™",
 			age : 30,
 			desc : function(){
 				return this.name + ", " + this.age;
@@ -23,7 +23,7 @@
 </head>
 <body>
 	<h1>Function test</h1>
-	<button type= "button" onclick= "test()">ÇÔ¼ö È£Ãâ</button>
+	<button type= "button" onclick= "test()">í•¨ìˆ˜ í˜¸ì¶œ</button>
 	<hr>
 	<script>
 		document.write(person.desc() + '<br>')

@@ -1,24 +1,24 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="EUC-KR">
+<meta charset="UTF-8">
 <title>JS - Const:Object</title>
 <script>
 	/* let x = 100;
 	const y = 100; */
-	const x_arr = ["java", "oracle"];	// ¹è¿­ : ´ë°ıÈ£[]
+	const x_arr = ["java", "oracle"];	// ë°°ì—´ : ëŒ€ê´„í˜¸[]
 	const y_arr = ["java", "oracle"];
 	
 	/* JSON(JavaScript Object Notation) */
-	const json1 = {"subject1":"java", 'subject2':"oracle"};	// JSON Å¸ÀÔ : {name:value, name:value, ...} - REST
-	const score = {name:"È«±æµ¿", kor:100, eng:100, math:100, tot:300, avg:100.0};
+	const json1 = {"subject1":"java", 'subject2':"oracle"};	// JSON íƒ€ì… : {name:value, name:value, ...} - REST
+	const score = {name:"í™ê¸¸ë™", kor:100, eng:100, math:100, tot:300, avg:100.0};
 	
 	/* JSON + Array */
-	const scoreList = {hong:[{name:"È«±æµ¿"}, 10, 10, 10], test:["Å×½ºÆ®", 20, 20, 20]};
+	const scoreList = {hong:[{name:"í™ê¸¸ë™"}, 10, 10, 10], test:["í…ŒìŠ¤íŠ¸", 20, 20, 20]};
 	
-	/* const x_arr = ["java", "oracle", "html"];	- const Å°¿öµå´Â ÀçÁ¤ÀÇ ºÒ°¡´É */
+	/* const x_arr = ["java", "oracle", "html"];	- const í‚¤ì›Œë“œëŠ” ì¬ì •ì˜ ë¶ˆê°€ëŠ¥ */
 	
 	document.write('Array <br><hr>');
 	document.write('x_arr --> ' + x_arr + '<br>');
