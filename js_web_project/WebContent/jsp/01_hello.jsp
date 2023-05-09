@@ -5,10 +5,11 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
-<script src= "http://localhost:9000/js_web_project/jquery/jquery-3.6.4.min.js"></script>
-<script src= "kobis_getjson.js"></script>
 </head>
 <body>
-
+	<h1>Hello JSP</h1>
+	<%
+		out.write("JSP 실행");
+	%>
 </body>
 </html>

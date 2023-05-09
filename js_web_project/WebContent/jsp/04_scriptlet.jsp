@@ -5,10 +5,13 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
-<script src= "http://localhost:9000/js_web_project/jquery/jquery-3.6.4.min.js"></script>
-<script src= "kobis_getjson.js"></script>
 </head>
 <body>
-
+	<h1>Scriptlet</h1>
+	<%
+		String name = "홍길동";
+		System.out.println("name = " + name);	// 서버 콘솔창에 출력
+		out.write("name = " + name);	// 웹 브라우저에 출력
+	%>
 </body>
 </html>

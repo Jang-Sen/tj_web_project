@@ -5,10 +5,12 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
-<script src= "http://localhost:9000/js_web_project/jquery/jquery-3.6.4.min.js"></script>
-<script src= "kobis_getjson.js"></script>
 </head>
 <body>
-
+	<%-- 전역변수 선언 --%>
+	<%!
+		String name = "홍길동";
+	%>
+	<%! public static final int START = 1; %>
 </body>
 </html>
